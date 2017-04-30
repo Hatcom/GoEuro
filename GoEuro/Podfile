@@ -1,0 +1,11 @@
+platform :ios, '7.0'
+
+def pods
+  inhibit_all_warnings!
+
+  pod 'SDWebImage'
+end
+
+target 'GoEuro' do
+  pods
+end
