@@ -12,7 +12,7 @@
 #import "GERidesListCollectionViewCell.h"
 
 
-@interface GEMainViewController () <UICollectionViewDataSource, SegmentedChooserViewDelegate>
+@interface GEMainViewController () <UICollectionViewDataSource, SegmentedChooserViewDelegate, UICollectionViewDelegate>
 @property (weak, nonatomic) IBOutlet SegmentedChooserView *segmentedChooser;
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
@@ -31,6 +31,7 @@ static NSString* const kRideSourceCellId = @"kRideSourceCellId";
     [super viewDidLoad];
 
     self.segmentedChooser.delegate = self;
+	[self.segmentedChooser selectWithRatio: 0.0f];
 
 	self.entityService = [TransportEntityService new];
     
@@ -115,6 +116,15 @@ static NSString* const kRideSourceCellId = @"kRideSourceCellId";
 	}
 
     return cell;
+}
+
+
+#pragma mark - UICollectionViewDelegate
+
+- (void)scrollViewDidScroll: (UIScrollView*)scrollView {
+    CGFloat ratio = self.collectionView.contentOffset.x / self.collectionView.bounds.size.width;
+    
+    [self.segmentedChooser selectWithRatio: ratio];
 }
 
 

@@ -33,6 +33,7 @@
 		F5DCACC81EB65A80003E806B /* RideParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DCACC71EB65A80003E806B /* RideParser.swift */; };
 		F5DCACCA1EB65B39003E806B /* RidesWebservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DCACC91EB65B39003E806B /* RidesWebservice.swift */; };
 		F5DCACCC1EB65BAA003E806B /* URLRequest+DefaultRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DCACCB1EB65BAA003E806B /* URLRequest+DefaultRequest.swift */; };
+		F5DCACD01EB66336003E806B /* AnimatedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DCACCF1EB66336003E806B /* AnimatedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		F5DCACCB1EB65BAA003E806B /* URLRequest+DefaultRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLRequest+DefaultRequest.swift"; sourceTree = "<group>"; };
 		F5DCACCD1EB65CE3003E806B /* helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = helper.h; sourceTree = "<group>"; };
 		F5DCACCE1EB65D1F003E806B /* GoEuro-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GoEuro-Prefix.pch"; sourceTree = "<group>"; };
+		F5DCACCF1EB66336003E806B /* AnimatedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +191,7 @@
 				F5DCAC9C1EB64CB5003E806B /* GERidesListCollectionViewCell.m */,
 				F5DCACA31EB64F9C003E806B /* GERideDetailsTableViewCell.h */,
 				F5DCACA41EB64F9C003E806B /* GERideDetailsTableViewCell.m */,
+				F5DCACCF1EB66336003E806B /* AnimatedButton.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 				F5DCACCC1EB65BAA003E806B /* URLRequest+DefaultRequest.swift in Sources */,
 				F5DCACC01EB65A21003E806B /* TrainWebservice.swift in Sources */,
 				F5DCAC9A1EB64BFD003E806B /* GETripsListDataSourceProvider.m in Sources */,
+				F5DCACD01EB66336003E806B /* AnimatedButton.swift in Sources */,
 				F5DCAC791EB64765003E806B /* main.m in Sources */,
 				F5DCACC61EB65A58003E806B /* BusParser.swift in Sources */,
 			);
@@ -553,6 +557,7 @@
 				F5DCAC8D1EB64765003E806B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
